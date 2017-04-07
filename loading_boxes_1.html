@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <style>
+    body {
+      background: #EEF2F5;
+    }
+    .loading-container {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      box-shadow: 0 10px 40px #ddd;
+      width:      560px;
+      height:     240px;
+    }
+
+    .loader-boxes {
+      width: 160px;
+    }
+
+    .loader-boxes .box {
+      background-color: #80D8F5;
+      width: 8px;
+      height: 8px;
+      border-radius: 1.5px;
+      margin-bottom: 1px;
+    }
+
+    .loader-boxes .box-1 {
+      animation: swing ease-in-out 2s infinite;
+      animation-delay: 0s;
+    }
+    .loader-boxes .box-2 {
+      animation: swing ease-in-out 2s infinite;
+      animation-delay: 0.1s;
+    }
+    .loader-boxes .box-3 {
+      animation: swing ease-in-out 2s infinite;
+      animation-delay: 0.2s;
+    }
+    .loader-boxes .box-4 {
+      animation: swing ease-in-out 2s infinite;
+      animation-delay: 0.3s;
+    }
+    .loader-boxes .box-5 {
+      animation: swing ease-in-out 2s infinite;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes swing {
+      0%, 60% {
+        margin-left: 0;
+        transform: scaleX(1);
+        background-color: #568FA4;
+      }
+      15%, 45% {
+        transform: scaleX(6);
+        background-color: #BBEBF6;
+        box-shadow: 0 0 0 #ccc;
+      }
+      30% {
+        margin-left: 100%;
+        transform: scaleX(1.6) scaleY(1.6) rotate(-40deg);
+        background-color: #568FA4;
+        box-shadow: 3px 5px 1px #ccc;
+      }
+      100% {
+        transform: rotate(90deg);
+        background-color: #568FA4;
+      }
+      80% {
+        background-color: #BBEBF6;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="loading-container">
+      <div class="loader-boxes">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+      </div>
+    </div>
+  </body>
+</html>

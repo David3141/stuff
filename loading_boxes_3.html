@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+    body {
+      background: #EEF2F5;
+    }
+    .loading-container {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      box-shadow: 0 10px 40px #ddd;
+      width:      560px;
+      height:     240px;
+    }
+
+    .boxes {
+      width: 120px;
+    }
+
+    .boxes {}
+
+    .lower-boxes {
+      position: absolute;
+    }
+
+    .boxes .box {
+      background-color: #80D8F5;
+      width: 10px;
+      height: 10px;
+      transform: rotateZ(45deg);
+      display: inline-block;
+    }
+
+    .boxes .box {
+      animation: move ease-in 600ms infinite;
+    }
+
+    .boxes .box-1 { animation-delay: 0.0s; }
+    .boxes .box-2 { animation-delay: 0.1s; }
+    .boxes .box-3 { animation-delay: 0.2s; }
+    .boxes .box-4 { animation-delay: 0.3s; }
+    .boxes .box-5 { animation-delay: 0.4s; }
+    .boxes .box-6 { animation-delay: 0.5s; }
+
+    @keyframes move {
+      0% {
+        transform: translate(0, 0) rotateZ(0deg);
+        background: #4675F5;
+        box-shadow: 0 1px 0 0 rgba(0, 0, 255, 0.0);
+      }
+      50% {
+        transform: translate(0, -16px) rotateZ(50deg);
+        background: #4675F5;
+        box-shadow: -20px 0px 0 0 rgba(0, 220, 140, 0.9);
+      }
+      75% {
+        transform: translate(0, -18px) rotateZ(110deg);
+
+      }
+      100% {
+        transform: translate(0, 0) rotateZ(135deg);
+        background: #4675F5;
+        box-shadow: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="loading-container">
+      <div class="boxes">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+      </div>
+    </div>
+  </body>
+</html>

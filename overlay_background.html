@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      .image-bg {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        background: url('http://lorempixel.com/output/nature-q-c-1313-1259-2.jpg') center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .image-bg:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(135deg, rgba(226, 220, 225, 0.0) 0%, #AE8D81 80%);
+      }
+      .container {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body class="image-bg">
+    <div class="container" id="main">
+
+      <div class="logo">
+        <h1>Background Overlay Image</h1>
+      </div>
+
+    </div>
+  </body>
+</html>
